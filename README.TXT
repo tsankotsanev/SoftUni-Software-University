@@ -1,1 +1,0 @@
-Homework, exams and exercises.
