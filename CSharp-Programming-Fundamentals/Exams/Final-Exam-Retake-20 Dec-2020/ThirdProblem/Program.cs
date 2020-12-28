@@ -93,8 +93,7 @@ namespace ThirdProblem
 
             Console.WriteLine("Heroes:");
 
-            foreach (var hero in heroes
-)
+            foreach (var hero in heroes)
             {
                 Console.WriteLine($"== {hero.Key}: {string.Join(", ", hero.Value["spell"])}");
             }
