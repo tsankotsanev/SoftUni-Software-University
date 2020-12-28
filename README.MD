@@ -1,4 +1,4 @@
-# <p align="center"> Courses <p>
+# <p align="center"> Software Engineering Courses <p>
 
 <a href="https://softuni.bg" rel="Courses"> ![SoftUni logo][logo] </a>
 
@@ -7,10 +7,9 @@
 <td>
 
 
-
-| <a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020" > Programming Basics with C# </a>         | <a href="https://softuni.bg/certificates/details/88258/3bb30352"> Link</a> |
-
+| <a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020" > Programming Basics with C# </a>         | <a href="https://softuni.bg/certificates/details/88258/3bb30352"> Certificate</a> |
+| --------------------------------------------------------------------- | ---------------------------------------------------------- |
 | <a href="https://softuni.bg/trainings/3135/csharp-fundamentals-september-2020"> C# Fundamentals
-</a> | <a href="https://softuni.bg/certificates/details/93992/4eead54a"> Link</a> |                                               |
+</a> | <a href="https://softuni.bg/certificates/details/93992/4eead54a"> Certificate</a> |                                               
 
 </td>
