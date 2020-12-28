@@ -6,8 +6,11 @@
 
 <td>
 
-| <a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020" > Programming Basics with C# </a>         | <a href="https://softuni.bg/certificates/details/61829/9a9e18ec"> Link</a> |
+
+
+| <a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020" > Programming Basics with C# </a>         | <a href="https://softuni.bg/certificates/details/88258/3bb30352"> Link</a> |
+
 | <a href="https://softuni.bg/trainings/3135/csharp-fundamentals-september-2020"> C# Fundamentals
-</a> | <a href="https://softuni.bg/certificates/details/65330/35ca2e73"> Link</a> |                                               |
+</a> | <a href="https://softuni.bg/certificates/details/93992/4eead54a"> Link</a> |                                               |
 
 </td>
