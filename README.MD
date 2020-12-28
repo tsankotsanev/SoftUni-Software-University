@@ -7,7 +7,6 @@
 <table align="center">
   <tr>
     <th><a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020" target="_blank" rel="noopener noreferrer"> Programming Basics with C# </a></th>
-    <th><a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020"> Programming Basics with C# </a></th>
     <th><a href="https://softuni.bg/certificates/details/88258/3bb30352"> Certificate</a></th>
   </tr>
   <tr>
