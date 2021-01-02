@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AppendArrays
 {
@@ -17,7 +17,7 @@ namespace AppendArrays
 
             foreach (var number in stringNumbers)
             {
-                numbers.AddRange(number.Split(new [] { " " }
+                numbers.AddRange(number.Split(new[] { " " }
                         , StringSplitOptions.RemoveEmptyEntries)
                     .Select(int.Parse)
                     .ToList()
