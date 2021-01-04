@@ -1,5 +1,5 @@
 <h1 id="exercise-arrays">Exercise: Arrays</h1>
-<p>Problems for exercise and homework for the <u><a href="https://softuni.bg/modules/57/tech-module-4-0">"C# Fundamentals" course @ SoftUni</a><br />
+<p>Problems for exercise and homework for the <u><a href="https://softuni.bg/trainings/3135/csharp-fundamentals-september-2020">"C# Fundamentals" course @ SoftUni</a><br />
 </u>You can check your solutions in <a href="https://judge.softuni.bg/Contests/1206"><u>Judge</u></a></p>
 <h2 id="train">Train</h2>
 <p>You will be given a count of wagons in a <strong>train</strong> <strong>n</strong>. On the next <strong>n</strong> lines you will receive how many people are going to get on each wagon. At the end print the whole train and after that, on the next line, the sum of the people in the train.</p>

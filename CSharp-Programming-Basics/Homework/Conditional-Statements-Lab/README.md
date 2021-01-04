@@ -1,5 +1,5 @@
 <h1 id="лаб-условни-конструкции">Лаб: Условни конструкции</h1>
-<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/courses/programming-basics">"Основи на програмирането" @ СофтУни</a>.</p>
+<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020">"Основи на програмирането" @ СофтУни</a>.</p>
 <p>Тествайте решенията си в <strong>Judge</strong> системата: <a href="https://judge.softuni.bg/Contests/2369">https://judge.softuni.bg/Contests/2369</a></p>
 <h2 id="празно-visual-studio-решение-blank-project">Празно Visual Studio решение (Blank Project)</h2>
 <p>Създайте празно решение (<strong>Blank Solution</strong>) във Visual Studio. Решенията (solutions) във Visual Studio обединяват <strong>група проекти</strong>. Тази възможност е изключително удобна, когато искаме да работим по няколко проекта и бързо да превключваме между тях или искаме да обединим логически няколко взаимосвързани проекта.</p>

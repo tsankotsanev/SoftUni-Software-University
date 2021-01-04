@@ -1,5 +1,5 @@
 <p><strong>Лаб: Повторения с цикли – While-цикъл</strong></p>
-<p>Задачи за упражнение и домашно към курса <a href="https://softuni.bg/courses/programming-basics">"Основи на програмирането" в СофтУни</a>.</p>
+<p>Задачи за упражнение и домашно към курса <a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020">"Основи на програмирането" в СофтУни</a>.</p>
 <p><strong>Тествайте</strong> решението си в <strong>judge системата</strong>: <a href="https://judge.softuni.bg/Contests/2383">https://judge.softuni.bg/Contests/2383</a></p>
 <h2 id="четене-на-думи">Четене на думи</h2>
 <p>Напишете програма, която чете текст от конзолата(стринг) и го принтира, докато не получи командата "<strong>Stop</strong>".<br />

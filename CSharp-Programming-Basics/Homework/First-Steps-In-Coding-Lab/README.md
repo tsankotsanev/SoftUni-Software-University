@@ -1,5 +1,5 @@
 <h1 id="първи-стъпки-в-програмирането">Първи стъпки в програмирането</h1>
-<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/courses/programming-basics">"Основи на програмирането" @ СофтУни</a>.</p>
+<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020">"Основи на програмирането" @ СофтУни</a>.</p>
 <p>Тествайте решенията си в <strong>judge системата</strong>: <u>https://judge.softuni.bg/Contests/2339/First-Steps-In-Coding-Lab</u></p>
 <h2 id="конзолна-програма-hello-softuni">Конзолна програма "Hello SoftUni"</h2>
 <p>Напишете <strong>конзолна C# програма</strong>, която отпечатва текста "<strong>Hello SoftUni</strong>".</p>

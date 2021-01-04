@@ -1,5 +1,5 @@
 <h1 id="exercise-lists"> Exercise: Lists</h1>
-<p>Problems for exercise and homework for the <u><a href="https://softuni.bg/modules/57/tech-module-4-0">"C# Fundamentals" course @ SoftUni</a><br />
+<p>Problems for exercise and homework for the <u><a href="https://softuni.bg/trainings/3135/csharp-fundamentals-september-2020">"C# Fundamentals" course @ SoftUni</a><br />
 </u>You can check your solutions here: <a href="https://judge.softuni.bg/Contests/1211"><u>Judge</u></a></p>
 <h2 id="train">Train</h2>
 <p>You will receive a <strong>list of wagons</strong> (integers) on the first line. Every integer represents <strong>the number of passengers that are currently in each of the wagons</strong>. On the next line, you will get <strong>the max capacity of each wagon</strong> (a single integer). Until you receive "<strong>end</strong>" you will be given two types of input:</p>
