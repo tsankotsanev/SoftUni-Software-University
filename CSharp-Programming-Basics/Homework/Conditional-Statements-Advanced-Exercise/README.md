@@ -1,5 +1,5 @@
 <h1 id="упражнения-вложени-условни-конструкции">Упражнения: Вложени условни конструкции</h1>
-<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/courses/programming-basics">"Основи на програмирането" @ СофтУни</a>.</p>
+<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020">"Основи на програмирането" @ СофтУни</a>.</p>
 <p><strong>Тествайте</strong> решението си в <strong>judge системата</strong>: <a href="https://judge.softuni.bg/Contests/2379">https://judge.softuni.bg/Contests/2379</a></p>
 <h2 id="кино">Кино</h2>
 <p>В една кинозала столовете са наредени в правоъгълна форма в <strong>r</strong> реда и <strong>c</strong> колони. Има три вида прожекции с билети на различни цени:</p>
