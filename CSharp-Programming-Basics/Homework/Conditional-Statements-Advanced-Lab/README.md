@@ -1,5 +1,5 @@
 <h1 id="лаб-вложени-условни-конструкции">Лаб: Вложени условни конструкции</h1>
-<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/courses/programming-basics">"Основи на програмирането" @ СофтУни</a>.</p>
+<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020">"Основи на програмирането" @ СофтУни</a>.</p>
 <p><strong>Тествайте</strong> решението си в <strong>judge системата</strong>: <a href="https://judge.softuni.bg/Contests/2377">https://judge.softuni.bg/Contests/2377</a></p>
 <h2 id="ден-от-седмицата">Ден от седмицата</h2>
 <p>Напишете програма, която чете <strong>цяло</strong> <strong>число</strong>, въведено от потребителя, и отпечатва <strong>ден от седмицата</strong> (на английски език), в граници [1...7] или отпечатва "<strong>Error</strong>" в случай, че въведеното число е <strong>невалидно</strong>.</p>
