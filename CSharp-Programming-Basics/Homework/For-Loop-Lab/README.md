@@ -1,5 +1,5 @@
 <p><strong>Лаб: Повторения с цикли – For-цикъл</strong></p>
-<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/courses/programming-basics">"Основи на програмирането" @ СофтУни</a>.</p>
+<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020">"Основи на програмирането" @ СофтУни</a>.</p>
 <p>Тествайте решенията си тук: <a href="https://judge.softuni.bg/Contests/2380">https://judge.softuni.bg/Contests/2380</a></p>
 <h2 id="числа-от-1-до-100">Числа от 1 до 100</h2>
 <p>Напишете програма, която отпечатва числата от 1 до 100, всяко на нов ред.</p>

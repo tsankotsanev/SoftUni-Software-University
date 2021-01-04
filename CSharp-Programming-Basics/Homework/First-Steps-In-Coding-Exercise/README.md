@@ -1,5 +1,5 @@
 <p>Първи стъпки в програмирането</p>
-<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/courses/programming-basics">"Основи на програмирането" @ СофтУни</a>.</p>
+<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020">"Основи на програмирането" @ СофтУни</a>.</p>
 <p>Тествайте задачите си в Judge системата: <a href="https://judge.softuni.bg/Contests/Compete/Index/2375">https://judge.softuni.bg/Contests/Index/2375</a>.</p>
 <h2 id="конзолен-конвертор-usd-към-bgn">Конзолен конвертор: USD към BGN</h2>
 <p>Напишете програма за <strong>конвертиране на щатски долари</strong> (USD) <strong>в български лева</strong> (BGN). Използвайте фиксиран <strong>курс</strong> между долар и лев: <strong>1 USD</strong> = <strong>1.79549 BGN</strong>.</p>

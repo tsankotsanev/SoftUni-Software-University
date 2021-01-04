@@ -1,5 +1,5 @@
 <h1 id="exercise-data-types-and-variables">Exercise: Data Types and Variables</h1>
-<p>Problems for exercise and homework for the<br />
+<p>Problems for exercise and homework for the <u><a href="https://softuni.bg/trainings/3135/csharp-fundamentals-september-2020">"C# Fundamentals" course @ SoftUni</a><br />
 You can check your solutions in <a href="https://judge.softuni.bg/Contests/1205/Data-Types-and-Variables-Exercise">Judge</a></p>
 <h2 id="integer-operations">Integer Operations</h2>
 <p>Read four integer numbers. Add first to the second, divide (integer) the sum by the third number and multiply the result by the fourth number. Print the result.</p>

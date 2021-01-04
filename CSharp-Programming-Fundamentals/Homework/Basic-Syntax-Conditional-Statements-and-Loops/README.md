@@ -1,5 +1,5 @@
 <h1 id="exercise-intro-and-basic-syntax">Exercise: Intro and Basic Syntax</h1>
-<p>Problems for exercises and homework for the <u><a href="https://softuni.bg/trainings/2363/csharp-fundamentals-may-2019">"C# Fundamentals" course @ SoftUni</a><br />
+<p>Problems for exercises and homework for the <u><a href="https://softuni.bg/trainings/3135/csharp-fundamentals-september-2020">"C# Fundamentals" course @ SoftUni</a><br />
 </u>You can check your solutions in <a href="https://judge.softuni.bg/Contests/1204"><u>Judge</u></a></p>
 <h2 id="ages">Ages</h2>
 <p>Write a program that determines whether based on the given age a person is: baby, child, teenager, adult, elder. The bounders are:</p>

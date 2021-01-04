@@ -1,5 +1,5 @@
 <h1 id="exercise-methods">Exercise: Methods</h1>
-<p>Problems for exercise and homework for the <u><a href="https://softuni.bg/modules/57/tech-module-4-0">"C# Fundamentals" course @ SoftUni</a><br />
+<p>Problems for exercise and homework for the <u><a href="https://softuni.bg/trainings/3135/csharp-fundamentals-september-2020">"C# Fundamentals" course @ SoftUni</a><br />
 </u>You can check your solutions in <a href="https://judge.softuni.bg/Contests/1209"><u>Judge</u></a></p>
 <h2 id="smallest-of-three-numbers">Smallest of Three Numbers</h2>
 <p>Write a method to print the smallest of three integer numbers. Use appropriate name for the method.</p>

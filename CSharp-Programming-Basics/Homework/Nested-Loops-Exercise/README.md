@@ -1,5 +1,5 @@
 <h1 id="упражнения-вложени-цикли">Упражнения: Вложени цикли</h1>
-<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/courses/programming-basics">"Основи на програмирането" @ СофтУни</a>.</p>
+<p>Задачи за упражнение в клас и за домашно към курса <a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020">"Основи на програмирането" @ СофтУни</a>.</p>
 <p><strong>Тествайте</strong> решението си в <strong>judge системата</strong>: <a href="https://judge.softuni.bg/Contests/2386">https://judge.softuni.bg/Contests/2386</a></p>
 <h2 id="пирамида-от-числа">Пирамида от числа</h2>
 <p>Напишете програма, която чете цяло число <strong>n</strong>, въведено от потребителя, и отпечатва <strong>пирамида от числа</strong> като в примерите:</p>
