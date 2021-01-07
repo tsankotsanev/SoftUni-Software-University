@@ -3,7 +3,7 @@
 <a href="https://softuni.bg" rel="Courses"> ![SoftUni logo][logo] </a>
 
 
-[logo]: https://picresize.com/popup.html?images/rsz_1softuni-code-wizard.png "Logo Title Text 2"
+[logo]: https://picresize.com/images/rsz_1softuni-code-wizard.png "Logo Title Text 2"
 
 <table align="center">
   <tr>
