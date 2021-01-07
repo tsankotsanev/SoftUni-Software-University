@@ -1,4 +1,4 @@
-# <p align="center"> Software Engineering Courses <p>
+# <p align="center"> Software Engineering<p>
   
 <a href="https://softuni.bg" rel="Courses"> ![SoftUni logo][logo] </a>
 
