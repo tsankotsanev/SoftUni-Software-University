@@ -1,9 +1,8 @@
 # <p align="center"> Software Engineering <p>
 
-<center>
-<a href="https://softuni.bg" title="SoftUni"><img align="middle" src="https://cdn.discordapp.com/attachments/747473634762817567/796862210991194152/softuni-code-wizard1.png" border="0" alt="SoftUni"></a>
-</center>
-
+<p align="center" <a href="https://softuni.bg" title="SoftUni"><img align="middle" src="https://cdn.discordapp.com/attachments/747473634762817567/796862210991194152/softuni-code-wizard1.png" border="0" alt="SoftUni"></a>
+<p>
+  
 <table align="center">
   <tr>
     <th><a href="https://softuni.bg/trainings/3038/programming-basics-with-c-sharp-july-2020"> Programming Basics with C# </a></th>
