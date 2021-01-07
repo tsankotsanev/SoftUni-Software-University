@@ -2,7 +2,7 @@
   
 <a href="https://softuni.bg" rel="Courses"> ![SoftUni logo][logo] </a>
 
-[logo]: https://cdn.discordapp.com/attachments/747473634762817567/796861525528018954/softuni-code-wizard.png "Logo Title Text 2"
+[logo]: https://cdn.discordapp.com/attachments/747473634762817567/796862210991194152/softuni-code-wizard1.png "Logo Title Text 2"
 
 <table align="center">
   <tr>
