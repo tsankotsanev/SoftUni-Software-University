@@ -1,8 +1,8 @@
-# <p align="center"> Software Engineering<p>
+# <p align="center"> Software Engineering <p>
   
 <a href="https://softuni.bg" rel="Courses"> ![SoftUni logo][logo] </a>
 
-[logo]: http://innovationstarterbox.bg/wp-content/uploads/2016/05/Softuni_logo_trasparent.png "Logo Title Text 2"
+[logo]: https://cdn.discordapp.com/attachments/747473634762817567/796860320286769182/software-university-logo.jpg "Logo Title Text 2"
 
 <table align="center">
   <tr>
