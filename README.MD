@@ -1,6 +1,8 @@
 # <p align="center"> Software Engineering <p>
 
+<div class="verticalhorizontal"> 
 <a href="https://softuni.bg" title="SoftUni"><img align="middle" src="https://cdn.discordapp.com/attachments/747473634762817567/796862210991194152/softuni-code-wizard1.png" border="0" alt="SoftUni"></a>
+</div>
 
 <table align="center">
   <tr>
