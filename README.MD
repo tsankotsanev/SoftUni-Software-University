@@ -2,9 +2,8 @@
   
 <a href="https://softuni.bg" rel="Courses"> ![SoftUni logo][logo] </a>
 
-<center>
+
 [logo]: https://cdn.discordapp.com/attachments/747473634762817567/796862210991194152/softuni-code-wizard1.png "Logo Title Text 2"
-</center>
 
 <table align="center">
   <tr>
