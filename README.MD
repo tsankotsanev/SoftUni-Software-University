@@ -1,11 +1,15 @@
 # <p align="center">Software Engineering<p>
 
-#OverviewText4 img{
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 50px;
-  left: 50px;
+#OverviewText4 {
+    position: relative;
+}
+
+#OverviewText4 img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }
 
 <div id="OverviewText4">
