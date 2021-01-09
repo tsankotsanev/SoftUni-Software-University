@@ -1,5 +1,5 @@
 <h1 id="exercise-associative-arrays">Exercise: Associative Arrays</h1>
-<p>Problems for exercise and homework for the <a href="https://softuni.bg/trainings/2438/csharp-fundamentals-september-2019">"C# Fundamentals" course @ SoftUni</a><br />
+<p>Problems for exercise and homework for the <a href="https://softuni.bg/trainings/3135/csharp-fundamentals-september-2020">"C# Fundamentals" course @ SoftUni</a><br />
 You can check your solutions in <a href="https://judge.softuni.bg/Contests/1213">Judge</a></p>
 <h2 id="count-chars-in-a-string">Count Chars in a String</h2>
 <p>Write a program that <strong>counts all characters</strong> in a string <strong>except for space (' ')</strong>.</p>
