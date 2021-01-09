@@ -1,5 +1,5 @@
 <h1 id="exercise-regular-expressions">Exercise: Regular Expressions</h1>
-<p>Problems for exercise and homework for the <a href="https://softuni.bg/trainings/2363/csharp-fundamentals-may-2019">"C# Fundamentals" course @ SoftUni</a><br />
+<p>Problems for exercise and homework for the <a href"https://softuni.bg/trainings/3135/csharp-fundamentals-september-2020">"C# Fundamentals" course @ SoftUni</a><br />
 You can check your solutions in <a href="https://judge.softuni.bg/Contests/1668/">Judge</a></p>
 <h2 id="furniture">Furniture</h2>
 <p>Write a program to calculate the total cost of different types of furniture. You will be given some lines of input until you receive the line "Purchase". For the line to be valid it should be in the following format:</p>
