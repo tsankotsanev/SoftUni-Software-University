@@ -1,5 +1,5 @@
 <h1 id="exercise-strings-and-text-processing">Exercise: Strings and Text Processing</h1>
-<p>Problems for exercise and homework for the <a href="https://softuni.bg/trainings/2363/csharp-fundamentals-may-2019">"C# Fundamentals" course @ SoftUni</a><br />
+<p>Problems for exercise and homework for the <a href="https://softuni.bg/trainings/3135/csharp-fundamentals-september-2020">"C# Fundamentals" course @ SoftUni</a><br />
 You can check your solutions here: <a href="https://judge.softuni.bg/Contests/1217">Judge</a></p>
 <h2 id="valid-usernames"> Valid Usernames</h2>
 <p>Write a program that <strong>reads user</strong> names on a <strong>single</strong> line (joined by <strong>", "</strong>) and <strong>prints</strong> all <strong>valid usernames</strong>.</p>
