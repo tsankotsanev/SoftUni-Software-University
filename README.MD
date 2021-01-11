@@ -1,6 +1,6 @@
 # <p align="center">Software Engineering<p>
 
-<p align="center"> <a href="https://softuni.bg" title="SoftUni"><img src="https://cdn.discordapp.com/attachments/747473634762817567/796862210991194152/softuni-code-wizard1.png" border="0" alt="SoftUni"></a><p>
+<p align="center"> <a href="https://softuni.bg" title="SoftUni"><img src="https://cdn.discordapp.com/attachments/747473634762817567/796862210991194152/softuni-code-wizard1.png" alt="SoftUni"></a><p>
 
 <table align="center">
   <tr>
