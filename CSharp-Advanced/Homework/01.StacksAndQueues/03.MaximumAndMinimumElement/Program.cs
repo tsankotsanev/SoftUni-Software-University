@@ -14,7 +14,8 @@ namespace _03.MaximumAndMinimumElement
 
             for (var i = 0; i < commandsCount; i++)
             {
-                var splitInput = Console.ReadLine()
+                var splitInput = Console
+                    .ReadLine()
                     .Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
                 var command = splitInput[0];

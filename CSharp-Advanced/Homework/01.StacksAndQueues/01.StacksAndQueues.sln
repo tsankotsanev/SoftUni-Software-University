@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.MaximumAndMinimumElement
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.FastFood", "04.FastFood\04.FastFood.csproj", "{1F003E68-A6B8-491A-9AA8-5FDF916EEFD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.FashionBoutique", "05.FashionBoutique\05.FashionBoutique.csproj", "{4AA486CD-2899-4019-8AAD-FB005FA4E365}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.FashionBoutique", "05.FashionBoutique\05.FashionBoutique.csproj", "{4AA486CD-2899-4019-8AAD-FB005FA4E365}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.SongsQueue", "06.SongsQueue\06.SongsQueue.csproj", "{E3208F82-D6C0-4557-8B50-5CEEF533AE62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.TruckTour", "07.TruckTour\07.TruckTour.csproj", "{F0E85313-249E-4660-A6E2-EE5ACC054DDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{4AA486CD-2899-4019-8AAD-FB005FA4E365}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AA486CD-2899-4019-8AAD-FB005FA4E365}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AA486CD-2899-4019-8AAD-FB005FA4E365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3208F82-D6C0-4557-8B50-5CEEF533AE62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3208F82-D6C0-4557-8B50-5CEEF533AE62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3208F82-D6C0-4557-8B50-5CEEF533AE62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3208F82-D6C0-4557-8B50-5CEEF533AE62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0E85313-249E-4660-A6E2-EE5ACC054DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0E85313-249E-4660-A6E2-EE5ACC054DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0E85313-249E-4660-A6E2-EE5ACC054DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0E85313-249E-4660-A6E2-EE5ACC054DDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,7 +10,8 @@ namespace _04.FastFood
         {
             var foodQuantity = int.Parse(Console.ReadLine());
 
-            var ordersInput = Console.ReadLine()
+            var ordersInput = Console
+                .ReadLine()
                 .Split(" ", StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
