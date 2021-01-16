@@ -25,20 +25,17 @@ namespace _06.SongsQueue
                         Console.WriteLine(string.Join(", ", songs));
                         break;
                     default:
-                        s
-                        {
-                            var songToAdd = command[4..];
+                        var songToAdd = command[4..];
 
-                            if (songs.Contains(songToAdd))
-                            {
-                                Console.WriteLine($"{songToAdd} is already contained!");
-                            }
-                            else
-                            {
-                                songs.Enqueue(songToAdd);
-                            }
-                            break;
+                        if (songs.Contains(songToAdd))
+                        {
+                            Console.WriteLine($"{songToAdd} is already contained!");
                         }
+                        else
+                        {
+                            songs.Enqueue(songToAdd);
+                        }
+                        break;
                 }
             }
 
