@@ -9,6 +9,6 @@
   </tr>
   <tr>
     <th><a href="https://softuni.bg/trainings/3135/csharp-fundamentals-september-2020">C# Fundamentals</a></th>
-    <th><a href="https://softuni.bg/certificates/details/93992/4eead54a"> Certificate</a></th>
+    <th><a href="https://softuni.bg/certificates/details/96344/e7233f2e"> Certificate</a></th>
   </tr>
   </table>
