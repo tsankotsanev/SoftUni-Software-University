@@ -14,7 +14,8 @@ namespace _01.DiagonalDifference
             {
                 var rowData = Console
                     .ReadLine()
-                    .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+                    ?.Split(" "
+                    , StringSplitOptions.RemoveEmptyEntries)
                     .Select(int.Parse)
                     .ToArray();
 
