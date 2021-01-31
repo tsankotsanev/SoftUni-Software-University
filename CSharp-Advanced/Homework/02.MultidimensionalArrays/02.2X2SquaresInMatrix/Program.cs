@@ -19,7 +19,7 @@ namespace _02._2X2SquaresInMatrix
 
             for (var row = 0; row < matrix.GetLength(0) - 1; row++)
             {
-                for (var col = 0; col < matrix.GetLength(0) - 1; col++)
+                for (var col = 0; col < matrix.GetLength(1) - 1; col++)
                 {
                     var isSquared = matrix[row, col] == matrix[row, col + 1]
                                     && matrix[row + 1, col] == matrix[row + 1, col + 1]
@@ -34,17 +34,17 @@ namespace _02._2X2SquaresInMatrix
             Console.WriteLine(squaredMatricesCount);
         }
 
-        private static int[,] ReadMatrix(int rows, int cols)
+        private static char[,] ReadMatrix(int rows, int cols)
         {
-            var matrix = new int[rows, cols];
+            var matrix = new char[rows, cols];
 
             for (var row = 0; row < matrix.GetLength(0); row++)
             {
                 var rowData = Console
                     .ReadLine()
-                    .Split(" "
-                        , StringSplitOptions.RemoveEmptyEntries)
-                    .Select(int.Parse)
+                    ?.Split(" "
+                    , StringSplitOptions.RemoveEmptyEntries)
+                    .Select(char.Parse)
                     .ToArray();
 
                 for (var col = 0; col < matrix.GetLength(1); col++)
