@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.DiagonalDifference", "01.DiagonalDifference\01.DiagonalDifference.csproj", "{C99DA574-C83C-4550-8569-D85EDCD6C737}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.DiagonalDifference", "01.DiagonalDifference\01.DiagonalDifference.csproj", "{C99DA574-C83C-4550-8569-D85EDCD6C737}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.2X2SquaresInMatrix", "02.2X2SquaresInMatrix\02.2X2SquaresInMatrix.csproj", "{2F16A223-EEB3-4090-8405-E6B00DDB1F15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.2X2SquaresInMatrix", "02.2X2SquaresInMatrix\02.2X2SquaresInMatrix.csproj", "{2F16A223-EEB3-4090-8405-E6B00DDB1F15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.MaximalSum", "03.MaximalSum\03.MaximalSum.csproj", "{CE266748-8BB0-436F-ABEF-82F8799DDB1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2F16A223-EEB3-4090-8405-E6B00DDB1F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F16A223-EEB3-4090-8405-E6B00DDB1F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F16A223-EEB3-4090-8405-E6B00DDB1F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE266748-8BB0-436F-ABEF-82F8799DDB1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE266748-8BB0-436F-ABEF-82F8799DDB1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE266748-8BB0-436F-ABEF-82F8799DDB1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE266748-8BB0-436F-ABEF-82F8799DDB1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace _02._2X2SquaresInMatrix
+namespace _03.MaximalSum
 {
     class Program
     {
@@ -9,29 +9,14 @@ namespace _02._2X2SquaresInMatrix
         {
             var dimensions = Console
                 .ReadLine()
-                ?.Split(" "
+                .Split(" "
                 , StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
 
             var matrix = ReadMatrix(dimensions[0], dimensions[1]);
-            var squaredMatricesCount = 0;
 
-            for (var row = 0; row < matrix.GetLength(0) - 1; row++)
-            {
-                for (var col = 0; col < matrix.GetLength(0) - 1; col++)
-                {
-                    var isSquared = matrix[row, col] == matrix[row, col + 1]
-                                    && matrix[row + 1, col] == matrix[row + 1, col + 1]
-                                    && matrix[row, col] == matrix[row + 1, col];
-                    if (isSquared)
-                    {
-                        squaredMatricesCount++;
-                    }
-                }
-            }
 
-            Console.WriteLine(squaredMatricesCount);
         }
 
         private static int[,] ReadMatrix(int rows, int cols)
@@ -43,7 +28,7 @@ namespace _02._2X2SquaresInMatrix
                 var rowData = Console
                     .ReadLine()
                     .Split(" "
-                        , StringSplitOptions.RemoveEmptyEntries)
+                    , StringSplitOptions.RemoveEmptyEntries)
                     .Select(int.Parse)
                     .ToArray();
 
@@ -54,6 +39,11 @@ namespace _02._2X2SquaresInMatrix
             }
 
             return matrix;
+        }
+
+        private static bool IsValidIndex(int row, int col, int rowsLength, int colsLength)
+        {
+            return row >= 0 && row < rowsLength && col >= 0 && col < colsLength;
         }
     }
 }
