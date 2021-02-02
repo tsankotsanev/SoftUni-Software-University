@@ -42,9 +42,15 @@ namespace _02._2X2SquaresInMatrix
             {
                 var rowData = Console
                     .ReadLine()
+<<<<<<< HEAD
                     ?.Split(" "
                     , StringSplitOptions.RemoveEmptyEntries)
                     .Select(char.Parse)
+=======
+                    .Split(" "
+                    , StringSplitOptions.RemoveEmptyEntries)
+                    .Select(int.Parse)
+>>>>>>> 0b7d9c4f1b4b28bb1426a695a66484fe9127eb23
                     .ToArray();
 
                 for (var col = 0; col < matrix.GetLength(1); col++)

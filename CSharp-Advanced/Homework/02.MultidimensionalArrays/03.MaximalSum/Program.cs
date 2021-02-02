@@ -9,7 +9,7 @@ namespace _03.MaximalSum
         {
             var dimensions = Console
                 .ReadLine()
-                .Split(" "
+                ?.Split(" "
                 , StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
@@ -27,7 +27,7 @@ namespace _03.MaximalSum
             {
                 var rowData = Console
                     .ReadLine()
-                    .Split(" "
+                    ?.Split(" "
                     , StringSplitOptions.RemoveEmptyEntries)
                     .Select(int.Parse)
                     .ToArray();
