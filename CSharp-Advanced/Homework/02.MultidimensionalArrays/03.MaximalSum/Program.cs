@@ -14,9 +14,7 @@ namespace _03.MaximalSum
                 .Select(int.Parse)
                 .ToArray();
 
-            var matrix = ReadMatrix(dimensions[0], dimensions[1]);
-
-
+            
         }
 
         private static int[,] ReadMatrix(int rows, int cols)
