@@ -10,7 +10,7 @@ namespace _02._2X2SquaresInMatrix
             var dimensions = Console
                 .ReadLine()
                 ?.Split(" "
-                    , StringSplitOptions.RemoveEmptyEntries)
+                , StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
 
@@ -42,8 +42,8 @@ namespace _02._2X2SquaresInMatrix
             {
                 var rowData = Console
                     .ReadLine()
-                    .Split(" "
-                        , StringSplitOptions.RemoveEmptyEntries)
+                    ?.Split(" "
+                    , StringSplitOptions.RemoveEmptyEntries)
                     .Select(int.Parse)
                     .ToArray();
 
