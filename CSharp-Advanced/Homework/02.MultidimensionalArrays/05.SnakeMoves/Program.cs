@@ -9,36 +9,54 @@ namespace _05.SnakeMoves
         {
             var dimensions = Console
                 .ReadLine()
-                ?.Split(" "
-                , StringSplitOptions.RemoveEmptyEntries)
+                .Split()
                 .Select(int.Parse)
                 .ToArray();
 
-            var rows = dimensions[0];
-            var cols = dimensions[1];
+            var input = Console.ReadLine();
 
-            var matrix = ReadMatrix(rows, cols);
-        }
+            var snakeMatrix = new char[dimensions[0], dimensions[1]];
+            var count = 0;
 
-        private static string[,] ReadMatrix(int rows, int cols)
-        {
-            var matrix = new string[rows, cols];
-
-            for (var row = 0; row < matrix.GetLength(0); row++)
+            for (var row = 0; row < snakeMatrix.GetLength(0); row++)
             {
-                var rowData = Console
-                    .ReadLine()
-                    ?.Split(" "
-                    , StringSplitOptions.RemoveEmptyEntries)
-                    .ToArray();
-
-                for (var col = 0; col < matrix.GetLength(1); col++)
+                if (row % 2 == 0)
                 {
-                    matrix[row, col] = rowData[col];
+                    for (var col = 0; col < snakeMatrix.GetLength(1); col++)
+                    {
+                        snakeMatrix[row, col] = input[count++];
+                        if (count == input.Length)
+                        {
+                            count = 0;
+                        }
+                    }
+                    continue;
+                }
+                for (var cols = snakeMatrix.GetLength(1) - 1; cols >= 0; cols--)
+                {
+                    snakeMatrix[row, cols] = input[count++];
+
+                    if (count == input.Length)
+                    {
+                        count = 0;
+                    }
                 }
             }
 
-            return matrix;
+            PrintMatrix(snakeMatrix);
+        }
+
+        private static void PrintMatrix(char[,] matrixSnake)
+        {
+            for (var row = 0; row < matrixSnake.GetLength(0); row++)
+            {
+                for (var col = 0; col < matrixSnake.GetLength(1); col++)
+                {
+                    Console.Write(matrixSnake[row, col]);
+                }
+
+                Console.WriteLine();
+            }
         }
     }
 }
