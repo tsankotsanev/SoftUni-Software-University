@@ -3,7 +3,6 @@
 <p>You can check your solutions here: <a href="https://judge.softuni.bg/Contests/1455/Multidimensional-Arrays-Exercise">https://judge.softuni.bg/Contests/1455/Multidimensional-Arrays-Exercise</a></p>
 <h2 id="diagonal-difference">Diagonal Difference</h2>
 <p>Write a program that finds the <strong>difference between the sums of the square matrix diagonals</strong> (absolute value).</p>
-<p><img src="media/image1.png" style="width:3.85433in;height:1.88583in" /></p>
 <h3 id="input">Input</h3>
 <ul>
 <li><p>On the <strong>first line</strong>, you are given the integer <strong>N</strong> – the size of the square matrix</p></li>
