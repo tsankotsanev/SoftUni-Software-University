@@ -1,3 +1,3 @@
-# <p align="center"><a href="https://softuni.bg/trainings/3214/csharp-oop-february-2021/internal"> C# OOP - February 2021 <a/><p>
+# <p align="center"><a href=https://softuni.bg/trainings/3344/csharp-oop-june-2021#lesson-26808> C# OOP - June 2021 <a/><p>
 
 The course **"C# OOP"** will teach you the **principles of object-oriented programming (OOP)**, to work with **classes and objects**, to use **object-oriented modeling** and to build **hierarchies of classes**. The basic principles of OOP such as **abstraction** (interfaces, abstract classes), **encapsulation**, **inheritance** and **polymorphism** will be studied. We will go into the most commonly used **design patterns**. We will look at component testing (writing unit tests) and the concept of **Test Driven Development (TDD)**, the use of **reflection**, and the **use of events**.
