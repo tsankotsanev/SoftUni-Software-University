@@ -14,7 +14,6 @@ namespace _05.SnakeMoves
                 .ToArray();
 
             var input = Console.ReadLine();
-
             var snakeMatrix = new char[dimensions[0], dimensions[1]];
             var count = 0;
 

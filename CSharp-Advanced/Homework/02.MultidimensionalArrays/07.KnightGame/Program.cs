@@ -82,7 +82,6 @@ namespace _07.KnightGame
         {
             return row >= 0 && row < chessBoard.GetLength(0)
                && column >= 0 && column < chessBoard.GetLength(1);
-
         }
         private static char[,] ReadMatrix(int rows, int cols)
         {
