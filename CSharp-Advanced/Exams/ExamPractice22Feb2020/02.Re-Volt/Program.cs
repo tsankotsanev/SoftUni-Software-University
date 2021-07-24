@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Numerics;
 
 namespace _02.Re_Volt
 {
@@ -7,59 +8,69 @@ namespace _02.Re_Volt
     {
         static void Main(string[] args)
         {
-            var n = int.Parse(Console.ReadLine());
-            var matrix = new char[n, n];
-
+            var dimension = int.Parse(Console.ReadLine());
+            var matrix = new char[dimension, dimension];
             var commandsCount = int.Parse(Console.ReadLine());
-
             var playerRow = -1;
             var playerCol = -1;
-            var finishMarkRow = -1;
-            var finishMarkCol = -1;
-            var bonusRow = -1;
-            var bonusCol = -1;
-            var trapRow = -1;
-            var trapCol = -1;
+            var hasWon = false;
 
-            for (var row = 0; row < n; row++)
+            for (var row = 0; row < dimension; row++)
             {
                 var currentRow = Console.ReadLine();
                 for (var col = 0; col < currentRow.Length; col++)
                 {
                     matrix[row, col] = currentRow[col];
 
-                    switch (matrix[row, col])
+                    if (matrix[row, col] == 'f')
                     {
-                        case 'f':
-                            playerRow = row;
-                            playerCol = col;
-                            break;
-                        case 'F':
-                            finishMarkRow = row;
-                            finishMarkCol = col;
-                            break;
-                        case 'B':
-                            bonusRow = row;
-                            bonusCol = col;
-                            break;
-                        case 'T':
-                            trapRow = row;
-                            trapCol = col;
-                            break;
+                        playerRow = row;
+                        playerCol = col;
                     }
                 }
             }
 
+            matrix[playerRow, playerCol] = '-';
+
             for (var i = 0; i < commandsCount; i++)
             {
                 var command = Console.ReadLine();
+                var previousRow = playerRow;
+                var previousCol = playerCol;
 
-                
+                playerRow = MoveRow(matrix, playerRow, command);
+                playerCol = MoveCol(matrix, playerCol, command);
+                var currentLocation = matrix[playerRow, playerCol];
+
+                if (currentLocation == 'F')
+                {
+                    hasWon = true;
+                    break;
+                }
+
+                if (currentLocation == 'B')
+                {
+                    playerRow = MoveRow(matrix, playerRow, command);
+                    playerCol = MoveCol(matrix, playerCol, command);
+                }
+
+                if (currentLocation == 'T')
+                {
+                    playerRow = previousRow;
+                    playerCol = previousCol;
+                }
             }
 
+            matrix[playerRow, playerCol] = 'f';
 
+            Console.WriteLine(hasWon
+                ? "Player won!"
+                : "Player lost!");
+
+            PrintMatrix(matrix);
         }
-        private static void PrintMatrix(int[,] matrix)
+
+        public static void PrintMatrix(char[,] matrix)
         {
             for (var row = 0; row < matrix.GetLength(0); row++)
             {
@@ -72,60 +83,51 @@ namespace _02.Re_Volt
             }
         }
 
-        private static int RowIsInvalid(int row, int rows)
+        public static int MoveRow(char[,] matrix, int row, string direction)
         {
-            if (row < 0)
+            var rowsLength = matrix.GetLength(0);
+
+            if (direction == "up")
             {
-                row = rows - 1;
+                row--;
+                if (row < 0)
+                {
+                    row = rowsLength - 1;
+                }
             }
-            if (row >= rows)
+            if (direction == "down")
             {
-                row = 0;
+                row++;
+                if (row > rowsLength - 1)
+                {
+                    row = 0;
+                }
             }
+
             return row;
         }
+        public static int MoveCol(char[,] matrix, int col, string direction)
+        {
+            var colsLength = matrix.GetLength(1);
 
-        private static int ColIsInvalid(int col, int cols)
-        {
-            if (col < 0)
+            if (direction == "left")
             {
-                col = cols - 1;
+                col--;
+                if (col < 0)
+                {
+                    col = colsLength - 1;
+                }
             }
-            if (col >= cols)
+            if (direction == "right")
             {
-                col = 0;
+                col++;
+                if (col > colsLength - 1)
+                {
+                    col = 0;
+                }
             }
+
             return col;
-        }
-        private static bool IsPositionValid(int row, int col, int rows, int cols)
-        {
-            if (row < 0 || row >= rows)
-            {
-                return false;
-            }
-            if (col < 0 || col >= cols)
-            {
-                return false;
-            }
-            return true;
-        }
-        private static int MoveRow(int row, string direction)
-        {
-            return direction switch
-            {
-                "up" => row - 1,
-                "down" => row + 1,
-                _ => row
-            };
-        }
-        private static int MoveCol(int col, string direction)
-        {
-            return direction switch
-            {
-                "left" => col - 1,
-                "right" => col + 1,
-                _ => col
-            };
         }
 
     }
