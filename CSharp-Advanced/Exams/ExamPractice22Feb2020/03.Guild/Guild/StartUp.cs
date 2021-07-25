@@ -1,10 +1,40 @@
-﻿namespace Guild
+﻿using System;
+
+namespace Guild
 {
     public class StartUp
     {
         public static void Main(string[] args)
         {
+            //Initialize the repository (guild)
+            Guild guild = new Guild("Weekend Raiders", 20);
+            //Initialize entity
+            Player player = new Player("Mark", "Rogue");
+            //Print player
+            Console.WriteLine(player); //Player Mark: Rogue
+            //Rank: Trial
+            //Description: n/a
 
+            //Add player
+            guild.AddPlayer(player);
+            Console.WriteLine(guild.RemovePlayer("Gosho")); //False
+
+            Player firstPlayer = new Player("Pep", "Warrior");
+            Player secondPlayer = new Player("Lizzy", "Priest");
+            Player thirdPlayer = new Player("Mike", "Rogue");
+            Player fourthPlayer = new Player("Marlin", "Mage");
+
+            //Add description to player
+            secondPlayer.Description = "Best healer EU";
+
+            //Add players
+            guild.AddPlayer(firstPlayer);
+            guild.AddPlayer(secondPlayer);
+            guild.AddPlayer(thirdPlayer);
+            guild.AddPlayer(fourthPlayer);
+
+            //Promote player
+            guild.PromotePlayer("Lizzy");
         }
     }
 }
