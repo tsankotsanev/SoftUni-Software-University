@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Guild
 {
@@ -7,22 +8,23 @@ namespace Guild
         public static void Main(string[] args)
         {
             //Initialize the repository (guild)
-            Guild guild = new Guild("Weekend Raiders", 20);
+            var guild = new Guild("Weekend Raiders", 20);
             //Initialize entity
-            Player player = new Player("Mark", "Rogue");
+            var player = new Player("Mark", "Rogue");
             //Print player
             Console.WriteLine(player); //Player Mark: Rogue
-            //Rank: Trial
-            //Description: n/a
+                                       //Rank: Trial
+                                       //Description: n/a
 
             //Add player
             guild.AddPlayer(player);
+            Console.WriteLine(guild.Count); //1
             Console.WriteLine(guild.RemovePlayer("Gosho")); //False
 
-            Player firstPlayer = new Player("Pep", "Warrior");
-            Player secondPlayer = new Player("Lizzy", "Priest");
-            Player thirdPlayer = new Player("Mike", "Rogue");
-            Player fourthPlayer = new Player("Marlin", "Mage");
+            var firstPlayer = new Player("Pep", "Warrior");
+            var secondPlayer = new Player("Lizzy", "Priest");
+            var thirdPlayer = new Player("Mike", "Rogue");
+            var fourthPlayer = new Player("Marlin", "Mage");
 
             //Add description to player
             secondPlayer.Description = "Best healer EU";
@@ -35,6 +37,22 @@ namespace Guild
 
             //Promote player
             guild.PromotePlayer("Lizzy");
+
+            //RemovePlayer
+            Console.WriteLine(guild.RemovePlayer("Pep")); //True
+
+            var kickedPlayers = guild.KickPlayersByClass("Rogue");
+            Console.WriteLine(string.Join(", ", kickedPlayers.Select(p => p.Name))); //Mark, Mike
+
+            Console.WriteLine(guild.Report());
+            //Players in the guild: Weekend Raiders
+            //Player Lizzy: Priest
+            //Rank: Member
+            //Description: Best healer EU
+            //Player Marlin: Mage
+            //Rank: Trial
+            //Description: n/a
+
         }
     }
 }

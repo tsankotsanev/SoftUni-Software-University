@@ -32,7 +32,7 @@ namespace Guild
 
         public bool RemovePlayer(string name)
         {
-            Player player = roster.FirstOrDefault(p => p.Name == name);
+            var player = roster.FirstOrDefault(p => p.Name == name);
             if (player != null)
             {
                 roster.Remove(player);
@@ -44,7 +44,7 @@ namespace Guild
 
         public void PromotePlayer(string name)
         {
-            Player player = roster.FirstOrDefault(p => p.Name == name && p.Rank != "Member");
+            var player = roster.FirstOrDefault(p => p.Name == name);
             if (player != null)
             {
                 player.Rank = "Member";
@@ -53,34 +53,36 @@ namespace Guild
 
         public void DemotePlayer(string name)
         {
-            Player player = roster.FirstOrDefault(p => p.Name == name && p.Rank != "Trial");
+            var player = roster.FirstOrDefault(p => p.Name == name && p.Rank != "Trial");
             if (player != null)
             {
                 player.Rank = "Trial";
             }
         }
 
-        public char[] KickPlayersByClass(string cClass)
+        public Player[] KickPlayersByClass(string playerClass)
         {
-            foreach (var player in cClass)
-            {
-                cClass.Remove(player);
-            }
+            var kickedPlayers = roster
+                .Where(p => p.Class == playerClass)
+                .ToArray();
 
-            return cClass.ToArray();
+            roster = roster
+                .Where(p => p.Class != playerClass)
+                .ToList();
+
+            return kickedPlayers;
         }
 
         public string Report()
         {
-            var result = new StringBuilder();
-            result.AppendLine($"Players in the guild: {Name}");
+            var result = $"Players in the guild: {Name}";
 
             foreach (var player in roster)
             {
-                result.AppendLine($"{player.Name}");
+                result += Environment.NewLine + player;
             }
 
-            return result.ToString();
+            return result;
         }
     }
 }

@@ -8,10 +8,10 @@ namespace Guild
     public class Player
     {
 
-        public Player(string name, string cClass)
+        public Player(string name, string playerClass)
         {
             Name = name;
-            Class = cClass;
+            Class = playerClass;
         }
 
         public string Name { get; set; }
