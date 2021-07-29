@@ -54,6 +54,7 @@ namespace Guild
         public void DemotePlayer(string name)
         {
             var player = roster.FirstOrDefault(p => p.Name == name && p.Rank != "Trial");
+
             if (player != null)
             {
                 player.Rank = "Trial";
