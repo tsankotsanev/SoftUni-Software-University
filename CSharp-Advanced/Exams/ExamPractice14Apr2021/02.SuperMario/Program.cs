@@ -7,28 +7,28 @@ namespace _02.SuperMario
         static void Main(string[] args)
         {
             var lives = int.Parse(Console.ReadLine());
-            var dimension = int.Parse(Console.ReadLine());
-            var matrix = new char[dimension, dimension];
+            var rows = int.Parse(Console.ReadLine());
+
+            var matrix = new char[rows][];
             var marioRow = -1;
             var marioCol = -1;
-            var isDead = false;
+            var hasWon = false;
 
-            for (var row = 0; row < dimension; row++)
+            for (var row = 0; row < matrix.GetLength(0); row++)
             {
-                var currentRow = Console.ReadLine();
-                for (var col = 0; col < currentRow.Length; col++)
-                {
-                    matrix[row, col] = currentRow[col];
+                var matrixRow = Console.ReadLine();
+                matrix[row] = new char[matrixRow.Length];
 
-                    if (matrix[row, col] == 'M')
+                for (var col = 0; col < matrixRow.Length; col++)
+                {
+                    matrix[row][col] = matrixRow[col];
+                    if (matrix[row][col] == 'M')
                     {
                         marioRow = row;
                         marioCol = col;
                     }
                 }
             }
-
-            matrix[marioRow, marioCol] = '-';
 
             while (true)
             {
@@ -37,106 +37,76 @@ namespace _02.SuperMario
                 var bowserRow = int.Parse(command[1]);
                 var bowserCol = int.Parse(command[2]);
 
-                matrix[bowserRow, bowserCol] = 'B';
+                matrix[bowserRow][bowserCol] = 'B';
+                matrix[marioRow][marioCol] = '-';
                 lives--;
+                switch (direction)
+                {
+                    case 'W':
+                        if (marioRow - 1 < 0)
+                        {
+                            continue;
+                        }
 
-                MoveRow(matrix, marioRow, direction);
-                MoveCol(matrix, marioCol, direction);
-                var currentLocation = matrix[marioRow, marioCol];
+                        marioRow--;
+                        break;
+                    case 'S':
+                        if (marioRow + 1 == rows)
+                        {
+                            continue;
+                        }
+
+                        marioRow++;
+                        break;
+                    case 'A':
+                        if (marioCol - 1 < 0)
+                        {
+                            continue;
+                        }
+
+                        marioCol--;
+                        break;
+                    case 'D':
+                        if (marioCol + 1 == matrix[marioRow].Length)
+                        {
+                            continue;
+                        }
+
+                        marioCol++;
+                        break;
+                }
 
                 if (lives <= 0)
                 {
-                    matrix[marioRow, marioCol] = 'X';
-                    isDead = true;
+                    matrix[marioRow][marioCol] = 'X';
                     break;
                 }
 
-                if (currentLocation == 'B')
+                if (matrix[marioRow][marioCol] == 'B')
                 {
                     lives -= 2;
                     if (lives <= 0)
                     {
-                        matrix[marioRow, marioCol] = 'X';
+                        matrix[marioRow][marioCol] = 'X';
                         break;
                     }
                 }
-                else if (currentLocation == 'P')
+                else if (matrix[marioRow][marioCol] == 'P')
                 {
-                    matrix[marioRow, marioCol] = '-';
+                    hasWon = true;
+                    matrix[marioRow][marioCol] = '-';
                     break;
                 }
-
-                matrix[marioRow, marioCol] = 'M';
             }
 
-            Console.WriteLine(!isDead
+            Console.WriteLine(hasWon
                 ? $"Mario has successfully saved the princess! Lives left: {lives}"
                 : $"Mario died at {marioRow};{marioCol}.");
 
-            PrintMatrix(matrix);
-        }
-
-        public static void PrintMatrix(char[,] matrix)
-        {
-            for (var row = 0; row < matrix.GetLength(0); row++)
+            foreach (var row in matrix)
             {
-                for (var col = 0; col < matrix.GetLength(1); col++)
-                {
-                    Console.Write(matrix[row, col]);
-                }
-
-                Console.WriteLine();
+                Console.WriteLine(string.Join("", row));
             }
-        }
-
-        public static int MoveRow(char[,] matrix, int row, char direction)
-        {
-            var rowsLength = matrix.GetLength(0);
-            var previousRow = row;
-
-            if (direction == 'W')
-            {
-                row--;
-                if (row < 0)
-                {
-                    row = previousRow;
-                }
-
-            }
-            else if (direction == 'S')
-            {
-                row++;
-                if (row > rowsLength - 1)
-                {
-                    row = previousRow;
-                }
-            }
-
-            return row;
-        }
-        public static int MoveCol(char[,] matrix, int col, char direction)
-        {
-            var colsLength = matrix.GetLength(1);
-            var previousCol = col;
-
-            if (direction == 'L')
-            {
-                col--;
-                if (col < 0)
-                {
-                    col = previousCol;
-                }
-            }
-            if (direction == 'R')
-            {
-                col++;
-                if (col > colsLength - 1)
-                {
-                    col = previousCol;
-                }
-            }
-
-            return col;
         }
     }
 }
