@@ -17,7 +17,7 @@ namespace _01.BirthdayCelebration
                 .ReadLine()
                 .Split()
                 .Select(int.Parse));
-
+            
             var wastedGramsOfFood = 0;
 
             while (guests.Any() && plates.Any())
@@ -45,7 +45,9 @@ namespace _01.BirthdayCelebration
                 }
             }
 
-            Console.WriteLine(plates.Any() ? $"Plates: {string.Join(" ", plates)}" : $"Guests: {string.Join(" ", guests)}");
+            Console.WriteLine(plates.Any() 
+            ? $"Plates: {string.Join(" ", plates)}" 
+            : $"Guests: {string.Join(" ", guests)}");
             Console.WriteLine($"Wasted grams of food: {wastedGramsOfFood}");
         }
     }
