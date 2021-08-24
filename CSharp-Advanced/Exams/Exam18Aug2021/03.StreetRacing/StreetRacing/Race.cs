@@ -67,8 +67,8 @@ namespace StreetRacing
         public string Report()
         {
             var result = new StringBuilder();
-
             result.AppendLine($"Race: {Name} - Type: {Type} (Laps: {Laps})");
+
             foreach (var participant in participants)
             {
                 result.AppendLine(participant.ToString());
