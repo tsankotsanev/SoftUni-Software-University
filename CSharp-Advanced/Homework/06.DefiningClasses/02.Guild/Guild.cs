@@ -21,7 +21,7 @@ namespace _02.Guild
 
         public void AddPlayer(Player player)
         {
-            if (roster.Count < this.Capacity)
+            if (roster.Count < Capacity)
             {
                 roster.Add(player);
             }
@@ -57,7 +57,7 @@ namespace _02.Guild
 
             return arr;
         }
-        public int Count => this.roster.Count;
+        public int Count => roster.Count;
 
         public string Report()
         {

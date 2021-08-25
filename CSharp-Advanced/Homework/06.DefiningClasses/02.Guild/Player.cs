@@ -4,9 +4,6 @@ namespace _02.Guild
 {
     public class Player
     {
-        public string Name { get; set; }
-        public string Class { get; set; }
-
         public Player(string name, string @class)
         {
             Name = name;
@@ -14,6 +11,10 @@ namespace _02.Guild
             Rank = "Trial";
             Description = "n/a";
         }
+
+        public string Name { get; set; }
+
+        public string Class { get; set; }
 
         public string Rank { get; set; }
 
@@ -23,9 +24,9 @@ namespace _02.Guild
         {
             var sb = new StringBuilder();
 
-            sb.AppendLine($"Player {this.Name}: {this.Class}");
-            sb.AppendLine($"Rank: {this.Rank}");
-            sb.AppendLine($"Description: {this.Description}");
+            sb.AppendLine($"Player {Name}: {Class}");
+            sb.AppendLine($"Rank: {Rank}");
+            sb.AppendLine($"Description: {Description}");
             return sb.ToString().TrimEnd();
         }
     }

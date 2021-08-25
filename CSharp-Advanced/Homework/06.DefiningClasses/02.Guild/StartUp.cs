@@ -9,7 +9,7 @@ namespace _02.Guild
         {
             //Initialize the repository (guild) 
 
-            Guild guild = new _02.Guild.Guild("Weekend Raiders", 20);
+            Guild guild = new Guild("Weekend Raiders", 20);
 
             //Initialize entity 
 
