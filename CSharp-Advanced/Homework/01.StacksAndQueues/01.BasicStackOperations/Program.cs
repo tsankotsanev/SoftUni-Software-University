@@ -18,13 +18,13 @@ namespace _01.BasicStackOperations
             var elementToLookFor = int.Parse(elements[2]);
 
             var numbersInput = Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+                ?.Split(" ", StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
 
             for (var i = 0; i < elementsToAdd; i++)
             {
-                numbers.Push(numbersInput[i]);
+                if (numbersInput != null) numbers.Push(numbersInput[i]);
             }
 
             for (var i = 0; i < elementsToRemove; i++)
