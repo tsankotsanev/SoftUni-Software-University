@@ -1,4 +1,0 @@
-# <p align="center"><a href="https://softuni.bg/trainings/3492/entity-framework-core-october-2021"> Entity Framework Core - October 2021
- <a/><p>
-  
-The course traces in detail the work with **ORM** technology: **Entity Framework Core** (EF core), which is a standard for ORM in C # and .NET Core applications. EF Core allows mapping between a relational database and an object-oriented model through the "database first" and "code first" approaches and provides a powerful object-oriented API for database queries and CRUD operations. EF core provides both an additional level of abstraction and an easy way to process database data. In the course we will demonstrate established practices in **building a database layer of complex systems in C # applications through built-in implementations of the Repository template** and the **use of service layer (Service Layer)**, as well as **import and export to various data formats (JSON, XML)**.
